@@ -1,0 +1,624 @@
+    1  java -version
+    2  wget https://dlcdn.apache.org/maven/maven-3/latest/binaries/apache-maven-latest-bin.tar.gz
+    3  ll
+    4  wget https://dlcdn.apache.org/maven/maven-4/latest/binaries/apache-maven-latest-bin.tar.gz
+    5  wget https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.tar.gz
+    6  ll
+    7  tar -zxvf apache-maven-3.9.6-bin.tar.gz 
+    8  sudo mv apache-maven-3.9.6 /opt/maven
+    9  vi ak.sh
+   10  sh ak.sh
+   11  source /etc/profile.d/maven.sh
+   12  mvn -version
+   13  ll
+   14  rm ak.sh 
+   15  ll
+   16  yum install git -y
+   17  git clone https://github.com/Abhiram2404/one.git
+   18  ll
+   19  cd one/
+   20  git checkout master
+   21  ll
+   22  rm -rf Dockerfile tomcat-users.xml styles.css script.js 
+   23  ll
+   24  mvn --version
+   25  ll
+   26  mvn clean package
+   27  ll
+   28  ll target/
+   29  cd ..
+   30  ll
+   31  git clone git@github.com:Abhiram2404/javacode.git
+   32  ll
+   33  git clone https://github.com/Abhiram2404/javacode.git
+   34  ll
+   35  cd javacode/
+   36  ll
+   37  mvn clean package
+   38  ll
+   39  mvn archetype:generate
+   40  ll
+   41  ls my-app/
+   42  ls my-app/src/
+   43  ls my-app/src/main/
+   44  ls my-app/src/main/java/
+   45  ls my-app/src/main/java/example/
+   46  cat my-app/src/main/java/example/App.java 
+   47  ll
+   48  cd my-app/
+   49  ll
+   50  ll src/
+   51  ll src/main/
+   52  ll src/main/java/
+   53  ll src/main/java/example/
+   54  ll
+   55  cd ..
+   56  ll
+   57  src/main/java/com/example/
+   58  mv src/main/java/com/example/
+   59  ll src/main/java/com/example/
+   60  ll
+   61  cdm
+   62  cd my-app/
+   63  ll
+   64  cd src/
+   65  ll
+   66  cd main/
+   67  ll
+   68  l
+   69  ll
+   70  cd java/
+   71  ll
+   72  cd ..
+   73  ll
+   74  cd ..
+   75  ll
+   76  cd ..
+   77  ll
+   78  mvn compile
+   79  ll
+   80  ll target/
+   81  ll
+   82  ll src/main/resources/
+   83  ll src/
+   84  ll src/main/
+   85  ll src/main/java/
+   86  ll src/main/java/example/
+   87  cat src/main/java/example/App.java 
+   88  ll
+   89  cd ..
+   90  ll
+   91  cat code.java 
+   92  cd ..
+   93  ll
+   94  cd javacode/
+   95  cd ..
+   96  cd one/
+   97  ll
+   98  cd src/
+   99  ll
+  100  cd main/
+  101  ll
+  102  cd webapp/
+  103  ll
+  104  pwd
+  105  cd ..
+  106  cd javacode/
+  107  ll
+  108  cd my-app/
+  109  ll
+  110  cd src/
+  111  cd main/
+  112  ll
+  113  cd java/
+  114  ll
+  115  cd /root/one/src/main/webapp
+  116  ll
+  117  cd -
+  118  ll
+  119  cd /root/one/src/main/webapp\
+  120  cd /root/one/src/main/webapp
+  121  ll
+  122  cd WEB-INF/
+  123  LL
+  124  ll
+  125  cd ,
+  126  cd ..
+  127  ll
+  128  cd -
+  129  cd ../../..
+  130  cd ..
+  131  cd javacode/
+  132  ll
+  133  cd my-app/
+  134  ll
+  135  mvn test
+  136  ll
+  137  ll src/
+  138  ll src/main/
+  139  ll src/main/java/
+  140  mvn package
+  141  ll
+  142  cd target/
+  143  ll
+  144  cd ..
+  145  ll
+  146  cd ..
+  147  ll
+  148  cd javacode/
+  149  ll
+  150  cd my-app/
+  151  ll
+  152  cd target/
+  153  ll
+  154  cd ..
+  155  ll
+  156  vi nginx.conf
+  157  ll
+  158  ll target/
+  159  yum install docker -y && systemctl start docker && systemctl enable docker
+  160  ll
+  161  vi Dockerfile
+  162  docker build -t my-nginx-java-app .
+  163  docker images
+  164  rm Dockerfile 
+  165  vi Dockerfile
+  166  docker build -it --name my-nginx-java-app .
+  167  docker build -t --name my-nginx-java-app .
+  168  docker build -t my-nginx-java-app .
+  169  rm Dockerfile 
+  170  vi Dockerfile
+  171  docker build -t my-nginx-java-app .
+  172  vi Dockerfile
+  173  docker build -t my-nginx-java-app .
+  174  vi Dockerfile
+  175  rm Dockerfile 
+  176  ll
+  177  vi Dockerfile
+  178  docker build -t myapp .
+  179  docekr run -itd --name cont1 -p 1111:80 myapp
+  180  docker images
+  181  docekr run -itd --name cont1 -p 1111:80 myapp
+  182  docker run -itd --name cont1 -p 1111:80 myapp
+  183  cd ..
+  184  ll
+  185  cd one/
+  186  ll
+  187  cd t
+  188  LL
+  189  cd target/
+  190  ll
+  191  docker ps
+  192  docker rm -f a474463828ec
+  193  docker ps
+  194  history
+  195  ll
+  196  cd j
+  197  cd javacode/
+  198  ll
+  199  cd my-app/
+  200  ll
+  201  cd src/
+  202  ll
+  203  cd main/
+  204  ll
+  205  cd ../..
+  206  ll
+  207  cd src/
+  208  ll
+  209  cd main/
+  210  ll
+  211  cd ..
+  212  ll
+  213  cd ,,
+  214  cd ..
+  215  ll
+  216  cd ..
+  217  ll
+  218  mkdir mygame
+  219  cd mygame/
+  220  l
+  221  ll
+  222  vi index.html
+  223  vi styles.css
+  224  vi script.js
+  225  ll
+  226  mvn -version
+  227  mvn generate:archetype
+  228  mvn genrate:archetype
+  229  history
+  230  mvn archetype:generate
+  231  ll
+  232  cd my-app/
+  233  ll
+  234  ll src/
+  235  ll src/main/
+  236  ll src/main/java/
+  237  ll src/main/java/devops/
+  238  cat src/main/java/devops/App.java 
+  239  clear
+  240  ll
+  241  mvn clean package
+  242  ll
+  243  cd target/
+  244  ll
+  245  cd ..
+  246  ll
+  247  cd src/
+  248  ll
+  249  cd main/
+  250  ll
+  251  cd java/
+  252  ll
+  253  cd devops/
+  254  ll
+  255  cd ..
+  256  ll
+  257  cd ..
+  258  ll
+  259  cd ..
+  260  ll
+  261  cd ..
+  262  ll
+  263  cd my-app/
+  264  ll
+  265  cd ..
+  266  ll
+  267  cp script.js styles.css my-app/
+  268  cd my-app/
+  269  ll
+  270  docker --version
+  271  systemctl status docker
+  272  ll
+  273  touch Dockerfile
+  274  ll target/
+  275  cd ..
+  276  ll
+  277  cd my-app/
+  278  ll
+  279  vi Dockerfile 
+  280  vi tomcat-users.xml
+  281  ll
+  282  cat Dockerfile 
+  283  docker build -t --name myimage .
+  284  docker build -it --name myimage .
+  285  docker build -i --name myimage .
+  286  docker build -i myimage .
+  287  docker build -t myimage .
+  288  docker images
+  289  docker run -itd --name cont1 -p 1111:80 myimage
+  290  ll
+  291  car Dockerfile 
+  292  cat Dockerfile 
+  293  docker exec -t cont1 bash
+  294  docker exec -tt cont1 bash
+  295  docker exec -it cont1 bash
+  296  ll
+  297  vi Dockerfile 
+  298  docker images
+  299  docker build -t myimage:v1 .
+  300  docker run -itd --name cont2 -p 2222:80 myimage:v1
+  301  cat Dockerfile 
+  302  ll
+  303  rm -rf tomcat-users.xml Dockerfile 
+  304  ll
+  305  vi Dokerfile
+  306  vi nginx.conf
+  307  vi docker-compose.yml
+  308  docker-compose build
+  309  vi ak.sh
+  310  sh ak.sh 
+  311  docker-compose build
+  312  ll
+  313  cat Dokerfile 
+  314  vi Dokerfile 
+  315  docker images
+  316  ll
+  317  docker-compose build
+  318  ls -l
+  319  mv Dokerfile Dokerfile
+  320  mv Dokerfile Dockerfile
+  321  ls -l
+  322  docker-compose build
+  323  ll
+  324  ls t
+  325  ls target/
+  326  vi Dockerfile 
+  327  docker-compose build
+  328  docker ps
+  329  docker rm -f $(docker ps -a)
+  330  docker ps
+  331  docker-compose up -d
+  332  docker ps
+  333  docker images
+  334  docker nginx inspect
+  335  docker inspect nginx
+  336  ll
+  337  http://localhost
+  338  docker ps
+  339  vi docker-compose.yml 
+  340  ll
+  341  rm ak.sh 
+  342  ll
+  343  vi docker-compose.yml 
+  344  vi nginx.conf 
+  345  cat nginx.conf 
+  346  docker-compose congig
+  347  docker-compose config
+  348  vi docker-compose.yml 
+  349  docker-compose config
+  350  docker ps
+  351  systemctl status docker
+  352  docekr images
+  353  docker images
+  354  docker rmi my-app_backend
+  355  docker ps
+  356  docker ps -a
+  357  docker start b2e02225f543
+  358  docekr start 1ba10c46863b
+  359  docker ps
+  360  docker ps -a
+  361  docker start b2e02225f543
+  362  docker start 1ba10c46863b
+  363  docker ps
+  364  docker ps -a
+  365  ll
+  366  docker-compose build
+  367  docker-compose up -d
+  368  docker ps
+  369  docker ps -a
+  370  docker rm -f b2e02225f543
+  371  docker rm -f 1ba10c46863b
+  372  docker ps -a
+  373  docker-compose up -d
+  374  docker ps
+  375  docker ps -a
+  376  docker exec -it 8b9656fb7033 cat /app/logs/app.log
+  377  docker exec -it 8b9656fb7033 bash
+  378  docker run -itd --name cont1 -p 8080:8080 my-app_backend
+  379  docker ps
+  380  docker ps -a
+  381  ll
+  382  vi Dockerfile
+  383  docker images
+  384  docker rmi my-app_backend
+  385  docker rm -f $(docker ps -a)
+  386  docker rm $(docker ps -a)
+  387  ll
+  388  docker ps -a
+  389  docker rm -f 770bffd9e033
+  390  docker rm -f 
+  391  docker rm -f 87d515591e57
+  392  docker rm -f 8b9656fb7033
+  393  docker ps -a
+  394  docker ps
+  395  docker images
+  396  docker rmi my-app_backend
+  397  docker images
+  398  docker-compose build
+  399  docker-compose up -d
+  400  docker ps
+  401  docker ps -a
+  402  ll
+  403  yum install git -y
+  404  git init
+  405  git add *
+  406  git commit -m "1st commit" .
+  407  git log
+  408  git status
+  409  ll
+  410  git branch -m MAIN
+  411  git remote add origin git@github.com:Abhiram2404/rock-paper.git
+  412  GIT PUSH -U ORIGIN MAIN
+  413  git push -u origin main
+  414  git log
+  415  git status
+  416  ll
+  417  git branch
+  418  git push -u origin MAIN
+  419  ll
+  420  git add .
+  421  git commit -m "Initial commit"
+  422  git push origin main
+  423  git push origin MAIN
+  424  git remote set-url origin git@github.com:Abhiram2404/rock-paper.git
+  425  git remote -v
+  426  git branch -m main
+  427  git push -u origin main
+  428  git push origin main
+  429  ll -la
+  430  rm -rf .git
+  431  ll
+  432  git log
+  433  git init
+  434  git remote add origin https://github.com/Abhiram2404/rock-paper.git
+  435  git -v
+  436  git remote -v
+  437  git branch
+  438  git log
+  439  git status
+  440  git add .
+  441  git commit -m "initial commit" .
+  442  git status
+  443  git branch
+  444  git checkout -d main
+  445  git checkout -D main
+  446  git branch
+  447  git branch main
+  448  git checkout main
+  449  ll
+  450  git log
+  451  git commit -m "second commit" .
+  452  git log
+  453  git remote add origin https://github.com/Abhiram2404/rock-paper.git
+  454  git -v
+  455  git remote -v
+  456  git branch
+  457  git push origin main
+  458  ll
+  459  git checkout master
+  460  docker ps
+  461  docker images
+  462  docker ps -a
+  463  ll
+  464  ll target/
+  465  ll
+  466  ll target/
+  467  cat target/my-app-1.0-SNAPSHOT.jar 
+  468  vi target/my-app-1.0-SNAPSHOT.jar 
+  469  java -v
+  470  java -version
+  471  ll
+  472  java -jar targ
+  473  ll target/
+  474  java -jar target\my-app-1.0-SNAPSHOT.jar
+  475  cd target/
+  476  chmod 777 user user my-app-1.0-SNAPSHOT.jar
+  477  chmod 777 my-app-1.0-SNAPSHOT.jar
+  478  ll
+  479  cd ..
+  480  java -jar target\my-app-1.0-SNAPSHOT.jar
+  481  ll
+  482  java -jar target/my-app-1.0-SNAPSHOT.jar
+  483  ll
+  484  cd ..
+  485  ll
+  486  cd ..
+  487  ll
+  488  ll mygame/
+  489  mkdir latest
+  490  cp my-app/* latest
+  491  cp my-app latest
+  492  ll
+  493  cp mygame/* latest/
+  494  ll
+  495  cd latest/
+  496  ll
+  497  mvn clean package
+  498  mvn archetype:genrate
+  499  mvn archetyp:genrate
+  500  mnv -v
+  501  mnv -version
+  502  mvn -v
+  503  mvn archetype:generate
+  504  ll
+  505  ll devops/
+  506  cd devops/
+  507  mvn clean package
+  508  cd /root/latest/devops/src/main/java/my-app
+  509  ll
+  510  vi App.java 
+  511  vi App.java
+  512  cd ..
+  513  mvn clean package
+  514  ll
+  515  cd my-app/
+  516  ll
+  517  cd ../..
+  518  ll
+  519  cd ..
+  520  ll
+  521  cd ..
+  522  ll
+  523  mvn clear package
+  524  ll
+  525  ll target/
+  526  mvn clear package
+  527  mvn clean package
+  528  vi /root/latest/devops/src/main/java/my-app/App.java
+  529  ll
+  530  mvn clean package
+  531  vi /root/latest/devops/src/main/java/my-app/App.java
+  532  mvn clean package
+  533  clear
+  534  ll
+  535  cd ..
+  536  ll
+  537  rm devops/
+  538  rm -rf devops
+  539  l
+  540  ll
+  541  clear
+  542  ll
+  543  cd mygame/
+  544  ll
+  545  cd my-app/
+  546  kk
+  547  ll
+  548  java -v
+  549  java -version
+  550  systemctl start docker
+  551  mvn -v
+  552  ll
+  553  ll target/
+  554  vi Dockerfile
+  555  mv Dockerfile Dockerfile1
+  556  ll
+  557  vi Dockerfile
+  558  docker build -t my-java-app .
+  559  vi Dockerfile
+  560  docker build -t my-java-app1 .
+  561  vi Dockerfile
+  562  docker build -t my-java-app1 .
+  563  docker run -d -p 8080:8080 --name my-container my-java-app1
+  564  docker ps
+  565  docker ps -a
+  566* docker logs my-contain
+  567  ll
+  568  cd target/
+  569  ll
+  570  mv my-app-1.0-SNAPSHOT.jar myapp.jar
+  571  ll
+  572  vi myapp.jar 
+  573  jar tf your-app.jar | grep META-INF/MANIFEST.MF
+  574  jar tf myapp.jar | grep META-INF/MANIFEST.MF
+  575  ll
+  576  cd ..
+  577  ll
+  578  cd ..
+  579  ll
+  580  cd ..
+  581  ll
+  582  cd one/
+  583  ll
+  584  cd ..
+  585  rm -rf one/
+  586  ll
+  587  git clone https://github.com/Abhiram2404/one.git
+  588  cd one/
+  589  git checkout master
+  590  ll
+  591  docker build -t aks .
+  592  ll
+  593  mvn clean package
+  594  docker build -t aks .
+  595  docker run -itd -p 1114:80 --name cont12 aks
+  596  docker ps
+  597  vi Dockerfile 
+  598  ll
+  599  vi Dockerfile 
+  600  ll
+  601  docker run -itd -p 1115:8080 --name cont13 aks
+  602  ll
+  603  cat tomcat-users.xml 
+  604  ll
+  605  history
+  606  git status
+  607  ll
+  608  cd ..
+  609  ll
+  610  cd mygame/
+  611  ll
+  612  cd my-app/
+  613  ll
+  614  git log
+  615  git status
+  616  docker stash
+  617  ll
+  618  git status
+  619  ll
+  620  git pull https://github.com/Abhiram2404/rock-paper.git
+  621  ll
+  622  git status
+  623  cat Dockerfile
+  624  history >> allhistory
